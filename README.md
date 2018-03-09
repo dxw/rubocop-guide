@@ -6,7 +6,9 @@ in dxw. We should in general:
 
 ### Basics
 - use the latest version of rubocop
-- configure CI to run rubocop and fail if there are *any* violations
+- configure CI to run rubocop
+  - don't modify the `--fail-level` severity: the default behaviour is to fail
+    if there are *any* violations and that's what we want
 - configure your editor to quickly and loudly complain about rubocop
   violations
   - otherwise it'll fail on CI and you'll feel silly
